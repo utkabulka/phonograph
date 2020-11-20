@@ -1,3 +1,4 @@
+/*
 package com.kabouzeid.gramophone.ui.activities;
 
 import android.content.Intent;
@@ -171,3 +172,4 @@ public class PurchaseActivity extends AbsBaseActivity implements BillingProcesso
         }
     }
 }
+*/

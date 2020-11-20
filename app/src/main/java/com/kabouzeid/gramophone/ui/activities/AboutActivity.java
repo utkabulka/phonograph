@@ -20,7 +20,7 @@ import com.kabouzeid.appthemehelper.ThemeStore;
 import com.kabouzeid.gramophone.App;
 import com.kabouzeid.gramophone.R;
 import com.kabouzeid.gramophone.dialogs.ChangelogDialog;
-import com.kabouzeid.gramophone.dialogs.DonationsDialog;
+//import com.kabouzeid.gramophone.dialogs.DonationsDialog;
 import com.kabouzeid.gramophone.ui.activities.base.AbsBaseActivity;
 import com.kabouzeid.gramophone.ui.activities.bugreport.BugReportActivity;
 import com.kabouzeid.gramophone.ui.activities.intro.AppIntroActivity;
@@ -203,12 +203,6 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
             openUrl(TRANSLATE);
         } else if (v == rateOnGooglePlay) {
             openUrl(RATE_ON_GOOGLE_PLAY);
-        } else if (v == donate) {
-            if (App.isProVersion()) {
-                DonationsDialog.create().show(getSupportFragmentManager(), "DONATION_DIALOG");
-            } else {
-                startActivity(new Intent(this, PurchaseActivity.class));
-            }
         } else if (v == aidanFollestadGitHub) {
             openUrl(AIDAN_FOLLESTAD_GITHUB);
         } else if (v == michaelCookWebsite) {

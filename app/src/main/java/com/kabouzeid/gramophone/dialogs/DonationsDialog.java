@@ -1,3 +1,4 @@
+/*
 package com.kabouzeid.gramophone.dialogs;
 
 import android.annotation.SuppressLint;
@@ -38,9 +39,8 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * @author Karim Abou Zeid (kabouzeid)
- */
+// @author Karim Abou Zeid (kabouzeid)
+
 public class DonationsDialog extends DialogFragment implements BillingProcessor.IBillingHandler {
     public static final String TAG = DonationsDialog.class.getSimpleName();
 
@@ -236,3 +236,4 @@ public class DonationsDialog extends DialogFragment implements BillingProcessor.
         }
     }
 }
+*/
