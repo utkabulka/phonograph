@@ -35,7 +35,8 @@ import de.psdev.licensesdialog.LicensesDialog;
 @SuppressWarnings("FieldCanBeLocal")
 public class AboutActivity extends AbsBaseActivity implements View.OnClickListener {
 
-    private static String GITHUB = "https://github.com/utkabulka/phonograph";
+    private static String GITHUB = "https://github.com/kabouzeid/Phonograph";
+    private static String GITHUB_FORK = "https://github.com/utkabulka/phonograph";
 
     private static String TWITTER = "https://twitter.com/swiftkarim";
     private static String WEBSITE = "https://kabouzeid.com/";
@@ -73,6 +74,8 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
     LinearLayout followOnTwitter;
     @BindView(R.id.fork_on_github)
     LinearLayout forkOnGitHub;
+    @BindView(R.id.modified_by)
+    LinearLayout modifiedBy;
     @BindView(R.id.visit_website)
     LinearLayout visitWebsite;
     @BindView(R.id.report_bugs)
@@ -137,6 +140,7 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
         licenses.setOnClickListener(this);
         followOnTwitter.setOnClickListener(this);
         forkOnGitHub.setOnClickListener(this);
+        modifiedBy.setOnClickListener(this);
         visitWebsite.setOnClickListener(this);
         reportBugs.setOnClickListener(this);
         writeAnEmail.setOnClickListener(this);
@@ -183,6 +187,8 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
             openUrl(TWITTER);
         } else if (v == forkOnGitHub) {
             openUrl(GITHUB);
+        } else if (v == modifiedBy) {
+            openUrl(GITHUB_FORK);
         } else if (v == visitWebsite) {
             openUrl(WEBSITE);
         } else if (v == reportBugs) {
