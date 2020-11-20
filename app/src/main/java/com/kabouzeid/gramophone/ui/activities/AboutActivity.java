@@ -35,7 +35,7 @@ import de.psdev.licensesdialog.LicensesDialog;
 @SuppressWarnings("FieldCanBeLocal")
 public class AboutActivity extends AbsBaseActivity implements View.OnClickListener {
 
-    private static String GITHUB = "https://github.com/kabouzeid/Phonograph";
+    private static String GITHUB = "https://github.com/utkabulka/phonograph";
 
     private static String TWITTER = "https://twitter.com/swiftkarim";
     private static String WEBSITE = "https://kabouzeid.com/";
@@ -164,11 +164,11 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
 
     private static String getCurrentVersionName(@NonNull final Context context) {
         try {
-            return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName + (App.isProVersion() ? " Pro" : "");
+            return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
-        return "Unkown";
+        return "Unknown";
     }
 
     @Override
